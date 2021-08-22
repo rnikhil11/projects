@@ -1,0 +1,10 @@
+RNN tagger:
+
+1. the secretariat is expected to race tomorrow .
+-> ['DETERMINER', 'NOUN', 'VERB', 'VERB', 'X', 'VERB', 'NOUN', 'PUNCT']
+
+2. people continue to inquire the reason for the race for outer space .
+-> ['NOUN', 'VERB', 'X', 'VERB', 'DETERMINER', 'NOUN', 'PREPOSITION', 'DETERMINER', 'NOUN', 'PREPOSITION', 'ADJECTIVE', 'NOUN', 'PUNCT']
+
+3. prople race tomorrow .
+-> ['NOUN', 'VERB', 'NOUN', 'PUNCT']

@@ -1,0 +1,26 @@
+FILES:
+ChandyLamport.java:     Has the main method. Reads the config file name from command line and calls the start() method of Setup class.
+Setup.java :            Sets up connections to send and receive messages from the node's neighbours and then initiates FloodProtocol, MAP and CL protocol.
+MesgRecvThread.java:    Create a RecvThread for each incoming channel
+RecvThread.java:        For a given incoming channel, calls methods for operating on messages received based on message type.
+MAPSendThread.java:     Runs MAP by choosing a neighbour at random and sending a MAP message
+FloodProtocol.java:     Node 0 floods the network by which all non-zero nodes choose a parent that can forward their local states to node 0 later.
+CLPThread.java:         Node 0 initiates CL protocol and captures snapshots, while other nodes end markers to outgoing channels and local states to node 0.
+LocalState.java:        Structure for storing local state
+Params.java:            Structure for passing configuration parameters.
+Message.java:           Message class for different types of messages and to convert to/from byte buffers.
+
+COMPILE:
+javac *.java
+
+EXECUTE: 
+java ChandyLamport config
+
+OUTPUTS:
+Outputs debugging information in standard output.
+Each node enters its local snapshots in config-<i>.out where i is the node number.
+
+SCRIPTS:
+After compiling, program can be executed with following scripts.
+launcher.sh > output : to run the program
+cleanup.sh : Kills all processes by user.

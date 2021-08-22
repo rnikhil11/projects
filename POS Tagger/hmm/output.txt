@@ -1,0 +1,9 @@
+HMM tagger: 
+1. people race tomorrow .
+-> ['NOUN', 'NOUN', 'NOUN', 'PUNCT']
+
+2. the secretariat is expected to race tomorrow .
+-> ['DETERMINER', 'NOUN', 'VERB', 'VERB', 'PREPOSITION', 'NOUN', 'NOUN', 'PUNCT']
+
+3. people continue to inquire the reason for the race for outer space .
+-> ['NOUN', 'VERB', 'X', 'VERB', 'DETERMINER', 'NOUN', 'PREPOSITION', 'DETERMINER', 'NOUN', 'PREPOSITION', 'ADJECTIVE', 'NOUN', 'PUNCT']
